@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #bfdbfe;
+    font-family: "Indie Flower";
+}
+
 .header {
     text-align: center;
-    padding: 50px 0;
-    font-size: 6rem;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px #1e40af;
+    background-color: #93c5fd;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.title {
+    padding: 0;
+    margin: -30px 0;
+    font-size: 8rem;
 }
 
 main {
@@ -13,18 +29,124 @@ main {
 }
 
 .message {
-    font-size: 3rem;
+    font-size: 5rem;
     padding: 50px;
 }
 
 .gameboard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
+    width: 462px;
+    height: 462px;
+    border: 2px solid gray;
+    text-align: center;
+    margin: 0px auto;
+    background-color: #dbeafe;
+    font-weight: 900;
+    user-select: none;
+
 }
 
 .field {
     border: 2px solid gray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    color: #404040;
+}
+
+.color {
+    color: #dc2626;
+}
+
+.field:hover {
+    background-color: #bfdbfe;
+}
+
+.btn {
+    font-size: 4rem;
+    padding: 20px 40px;
+    margin: 50px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+.copyright {
+    margin-top: 150px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .title {
+        font-size: 4.5rem;
+        padding: 0px
+    }
+
+    .message {
+        font-size: 2.5rem;
+        padding: 5px;
+    }
+
+    .gameboard {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 362px;
+        height: 362px;
+        border: 2px solid gray;
+        text-align: center;
+        margin: 0px auto;
+        background-color: #dbeafe;
+        font-weight: 900;
+    }
+
+    .field {
+        border: 2px solid gray;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        min-width: 117px;
+        max-width: 117px;
+        min-height: 117px;
+        max-height: 117px;
+        color: #404040;
+    }
+
+    .color {
+        color: #dc2626;
+    }
+
+    .btn {
+        font-size: 2rem;
+        margin: 20px;
+    }
+
+    .copyright {
+        margin: 0;
+    }
 }
