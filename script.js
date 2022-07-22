@@ -72,7 +72,7 @@ const game = (() => {
             removeClick();
             message.textContent = `Winner is Player ${sign}!`
         }
-        if (board[3] === board[4] && board[4] === board[6] && board[3] !== '') {
+        if (board[3] === board[4] && board[4] === board[5] && board[3] !== '') {
             removeClick();
             message.textContent = `Winner is Player ${sign}!`
         }

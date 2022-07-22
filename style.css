@@ -13,12 +13,16 @@ body {
     background-color: #93c5fd;
     font-weight: 900;
     padding: 20px;
+
 }
+
+
 
 .title {
     padding: 0;
     margin: -30px 0;
     font-size: 8rem;
+
 }
 
 main {
@@ -44,7 +48,7 @@ main {
     background-color: #dbeafe;
     font-weight: 900;
     user-select: none;
-
+    box-shadow: .1rem .1rem 1rem rgb(58, 58, 58);
 }
 
 .field {
@@ -81,6 +85,10 @@ main {
 
 .btn:hover {
     background-color: #1d4ed8;
+}
+
+.btn:active {
+    background-color: #1e40af;
 }
 
 .copyright {
